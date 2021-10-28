@@ -5,7 +5,7 @@ Only one tool here at the moment: a bash script to run on a rooted TV to update 
 On a rooted B9 or C9 you can open a shell on your TV and run the following four commands:
 
     cd /tmp
-    wget https://raw.githubusercontent.com/tf318/lg/main/update-ca-certs.sh 2
+    curl -k https://raw.githubusercontent.com/tf318/lg/main/update-ca-certs.sh --output update-ca-certs.sh
     chmod +x update-ca-certs.sh
     ./update-ca-certs.sh
 
