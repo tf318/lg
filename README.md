@@ -2,13 +2,16 @@
 
 Only one tool here at the moment: a bash script to run on a rooted TV to update the recently expired LetsEncrypt CA certificates (useful for Plex or Emby setups that use LetsEncrypt certificates, since LG have not updated the CA certs on many TVs). You must have root on your TV. Once you have shell access, download this script with wget and run it.
 
-On a rooted B9 or C9 you can open a shell on your TV and run the following four commands:
+On a rooted B9 or C9 you can open a shell on your TV and run the following command:
+
+    curl -k https://raw.githubusercontent.com/tf318/lg/main/update-ca-certs.sh | bash
+    
+Or, if you would prefer to inspect the script before running it, do the following instead:
 
     cd /tmp
     curl -k https://raw.githubusercontent.com/tf318/lg/main/update-ca-certs.sh --output update-ca-certs.sh
     chmod +x update-ca-certs.sh
     ./update-ca-certs.sh
-
 
 After updating the certs, the TV will reboot, and you should be good to go.
 
