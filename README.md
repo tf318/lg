@@ -8,7 +8,7 @@ On a rooted B9 or C9 just open a shell on your TV (via telnet or ssh) and run th
 
     curl -k https://raw.githubusercontent.com/tf318/lg/main/update-ca-certs.sh | bash
 
-That's it.
+That's it. The TV will reboot, and the updated certs will be in place.
 
 ## Manual Fix for CA Cert Update
 
